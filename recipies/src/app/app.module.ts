@@ -11,6 +11,7 @@ import { RecipeItemComponent } from './recipies/recipe-list/recipe-item/recipe-i
 import { ShoppingEditComponent } from './shopping list/shopping-edit/shopping-edit.component';
 import { RecipesComponent } from './recipies/recipes.component';
 import { ShoppingListComponent } from './shopping list/shopping-list.component';
+import { ShoppingListService } from './shopping list/shopping-list.service';
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { ShoppingListComponent } from './shopping list/shopping-list.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   schemas: [ NO_ERRORS_SCHEMA ],
   bootstrap: [AppComponent]
 })
