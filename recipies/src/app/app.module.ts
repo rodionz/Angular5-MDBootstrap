@@ -12,6 +12,7 @@ import { ShoppingEditComponent } from './shopping list/shopping-edit/shopping-ed
 import { RecipesComponent } from './recipies/recipes.component';
 import { ShoppingListComponent } from './shopping list/shopping-list.component';
 import { ShoppingListService } from './shopping list/shopping-list.service';
+import { AppRoutingModule } from './app.routing.module';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ShoppingListService } from './shopping list/shopping-list.service';
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [ShoppingListService],
   schemas: [ NO_ERRORS_SCHEMA ],
